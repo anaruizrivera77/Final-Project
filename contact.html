@@ -10,15 +10,126 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
-        <header>
-                <a href="#" class="logo">D&B NUTRITION</a>
-                <div class="toggle" onclick="toggleMenu();"></div>
-                <ul class="menu">
-                    <li><a href="./index.html" onclick="toggleMenu();">Home</a></li>
-                    <li><a href="" onclick="toggleMenu();">Nutrition</a></li>
-                    <li><a href="./login.html" onclick="toggleMenu();">Log In</a></li>
-                    <li><a href="./contact.html" onclick="toggleMenu();">Contact</a></li>
+    <header>
+        <a href="#" class="logo">D&B NUTRITION</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="./index.html" onclick="toggleMenu();">Home</a></li>
+            <li><a href="" onclick="toggleMenu();">Nutrition</a></li>
+            <li><a href="./login.html" onclick="toggleMenu();">Log In</a></li>
+            <li><a href="./contact.html" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    
+    <!-- contact form -->
+    <div class="hSpace"></div>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form class="sendEmail" action="https://formsubmit.co/8f92e2c56a6f1c3764a7620c384a7000" method="POST">
+            <label for="fname">First and Last Name</label>
+            <input type="text" id="flname" name="firstname" placeholder="Your name.." required>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="emailAdd" placeholder="Your email address.." required>
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+                <option value="mealPlan">Meal Plan</option>
+                <option value="nutrition">Nutrition</option>
+                <option value="calories">Calories</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="feedback">Feedback or Comment!</label>
+            <textarea id="feedback" name="feedback" placeholder="Give us your thoughts..." style="height:200px"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__addr">
+            <h1 class="footer__logo">D&B Nutrition, better than d&b</h1>
+            <h2>Contact</h2>
+            <address>
+                *8000 Somewhere In. The World 7247674-62822<br>
+                <a class="footer__btn" href="Nutrition@gmail.com">Email Us</a>
+            </address>
+        </div>
+
+        <ul class="footer__nav">
+            <li class="nav__item">
+                <h2 class="nav__title" >Media</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">D&B NUTRITION </a>
+                    </li>
+
+                    <li>
+                        <a href="#">Be Healthy</a>
+                    </li>
+
+                    <li>
+                        <a href="#">D&B</a>
+                    </li>
                 </ul>
-            </header>
+            </li>
+
+            <li class="nav__item nav__item--extra">
+                <h2 class="nav__title">Technology</h2>
+
+                <ul class="nav__ul nav__ul--extra">
+                    <li>
+                        <a href="#">Hardware Design D&B</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Software Design D&B</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Digital Signage D&B</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Automation </a>
+                    </li>
+
+                    <li>
+                        <a href="#">Artificial </a>
+                    </li>
+
+                    <li>
+                        <a href="#">D&B</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="nav__item">
+                <h2 class="nav__title">Legal</h2>
+
+                <ul class="nav__ul">
+                    <li>
+                        <a href="#">Privacy Policy D&B</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Terms of Use D&B</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Sitemap D&B</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="legal">
+            <p>&copy; 2021 D&B NUTRITION  . All Rights Reserved.</p>
+
+            <div class="legal__links">
+                <span>Made with <span class="heart">♥</span> remotely from D&B NUTRITION            </span>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
